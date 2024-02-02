@@ -1,7 +1,10 @@
+import { Navbar } from "../components"
 
 const Shef = () => {
   return (
-    <div>Shef</div>
+    <div>
+    <Navbar />
+    </div>
   )
 }
 
