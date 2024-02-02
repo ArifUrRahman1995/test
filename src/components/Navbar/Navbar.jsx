@@ -41,7 +41,7 @@ const Navbar = () => {
       </div>
 
       <ul className="app__navbar-links">
-        <ReactCardFlip flipDirection='vertical' isFlipped={isFlipped}>
+        <ReactCardFlip flipDirection='vertical' isFlipped={isFlipped} flipSpeedBackToFront={1} flipSpeedFrontToBack={2}>
           <div className='front'>
         <li className="p__opensans"><a href="#home"><FontAwesomeIcon icon={faHouse} style={{ fontSize: '2em' }} /></a></li>
         </div>
@@ -49,7 +49,7 @@ const Navbar = () => {
           <h1>Home</h1></div>
         </ReactCardFlip>
 
-        <ReactCardFlip flipDirection='vertical' isFlipped={isFlipped}>
+        <ReactCardFlip flipDirection='vertical' isFlipped={isFlipped} flipSpeedBackToFront={3} flipSpeedFrontToBack={4}>
           <div className='front'>
         <li className="p__opensans"><a href="#about"><FontAwesomeIcon icon={faAddressCard} style={{ fontSize: '2em' }} /></a></li>
         </div>
@@ -57,7 +57,7 @@ const Navbar = () => {
           <h1>About Us</h1></div>
         </ReactCardFlip>
 
-        <ReactCardFlip flipDirection='vertical' isFlipped={isFlipped}>
+        <ReactCardFlip flipDirection='horizontal' isFlipped={isFlipped} flipSpeedBackToFront={3} flipSpeedFrontToBack={1}>
           <div className='front'>
         <li className="p__opensans"><a href="#menu"><FontAwesomeIcon icon={faBars} style={{ fontSize: '2em' }} /></a></li>
         </div>
@@ -65,7 +65,7 @@ const Navbar = () => {
           <h1>Menu</h1></div>
         </ReactCardFlip>
         
-        <ReactCardFlip flipDirection='vertical' isFlipped={isFlipped}>
+        <ReactCardFlip flipDirection='vertical' isFlipped={isFlipped} flipSpeedBackToFront={5} flipSpeedFrontToBack={3}>
           <div className='front'>
         <li className="p__opensans"><a href="#awards"><FontAwesomeIcon icon={faAward} style={{ fontSize: '2em' }} /></a></li>
         </div>
@@ -73,7 +73,7 @@ const Navbar = () => {
           <h1>Awards</h1></div>
         </ReactCardFlip>
         
-        <ReactCardFlip flipDirection='vertical' isFlipped={isFlipped}>
+        <ReactCardFlip flipDirection='vertical' isFlipped={isFlipped} flipSpeedBackToFront={1} flipSpeedFrontToBack={2}>
           <div className='front'>
         <li className="p__opensans"><a href="#contact"><FontAwesomeIcon icon={faAddressBook} style={{ fontSize: '2em' }} /></a></li>
         </div>
@@ -81,12 +81,12 @@ const Navbar = () => {
           <h1>Contact</h1></div>
         </ReactCardFlip>
         <Link to='/shef'>
-        <ReactCardFlip flipDirection='vertical' isFlipped={isFlipped}>
+        <ReactCardFlip flipDirection='vertical' isFlipped={isFlipped} flipSpeedBackToFront={4} flipSpeedFrontToBack={5}>
         <div className='front'>
         <li className="p__opensans"><a href="#contact"><FontAwesomeIcon icon={faAddressBook} style={{ fontSize: '2em' }} /></a></li>
         </div>
         <div className='front Back'>
-        <h1>Contact</h1></div>
+        <h1>Shef</h1></div>
         </ReactCardFlip>
         </Link>
       </ul>
